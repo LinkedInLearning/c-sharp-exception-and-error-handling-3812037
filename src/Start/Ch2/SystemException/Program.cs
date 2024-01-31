@@ -12,15 +12,15 @@ catch (Exception e) {
     
     // Exercise the System.Exception properties and methods
     // Get the actual Type of the exception
-    Console.WriteLine($"Type: {e.GetType()}");
+
     // Retrieve the message string that the exception was created with
-    Console.WriteLine($"Message: {e.Message}");
+
     // The HelpLink field is optional and supplies a link to get more information
-    Console.WriteLine($"HelpLink: {e.HelpLink}");
+
     // Source is the application or object where the exception occurred
-    Console.WriteLine($"Source: {e.Source}");
+
     // TargetSite is the name of the method that threw the exception
-    Console.WriteLine($"TargetSite: {e.TargetSite}");
+
     // The StackTrace contains the stack calls leading up to the exception
-    Console.WriteLine($"Stack: {e.StackTrace}");
+
 }
