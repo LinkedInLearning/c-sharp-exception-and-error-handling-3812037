@@ -11,7 +11,7 @@ You can download the source code for the course and work locally on your compute
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 3. The project files are set up for use with .NET 6. If you have a later version of .NET installed, you can edit each project file to work with that version.
     - Open the .csproj file for the particular example
-    - Edit the XML tag named <TargetFramework> and change it to your version of .NET
+    - Edit the XML tag named `<TargetFramework>` and change it to your version of .NET
     - Example: Change `<TargetFramework>net6.0</TargetFramework>` to read `<TargetFramework>net8.0</TargetFramework>` to work with .NET 8
 
 
