@@ -12,7 +12,7 @@ You can download the source code for the course and work locally on your compute
 3. The project files are set up for use with .NET 6. If you have a later version of .NET installed, you can edit each project file to work with that version.
     - Open the .csproj file for the particular example
     - Edit the XML tag named <TargetFramework> and change it to your version of .NET
-    - Example: Change <TargetFramework>net6.0</TargetFramework> to read <TargetFramework>net8.0</TargetFramework> to work with .NET 8
+    - Example: Change `<TargetFramework>net6.0</TargetFramework>` to read `<TargetFramework>net8.0</TargetFramework>` to work with .NET 8
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
