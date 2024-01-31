@@ -6,8 +6,8 @@ You can download the source code for the course and work locally on your compute
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-  - .NET version 6
-  - A code editor such as Visual Studio Code
+    - .NET version 6
+    - A code editor such as Visual Studio Code
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 3. [Course-specific instructions]
 
