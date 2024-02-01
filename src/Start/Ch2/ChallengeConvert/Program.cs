@@ -2,8 +2,6 @@
 // Programming Challenge - convert user input into numbers
 
 bool Continue = true;
-int Op1, Op2;
-int result;
 
 while (Continue) {
     Console.WriteLine("Enter the first integer number: ");
