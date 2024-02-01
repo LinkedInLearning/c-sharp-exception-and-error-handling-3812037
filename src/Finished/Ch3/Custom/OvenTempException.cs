@@ -7,13 +7,13 @@ public class OvenTempException : Exception {
     public OvenTempException() : base() {
         OvenTemp = 0;
     }
-    public OvenTempException(int value, string Message) : base(Message) {
-        OvenTemp = value;
+    public OvenTempException(string Message) : base(Message) {
+        OvenTemp = 0;
     }
-    public OvenTempException(int value, string Message, Exception InnerException) : base(Message, InnerException) {
-        OvenTemp = value;
+    public OvenTempException(string Message, Exception InnerException) : base(Message, InnerException) {
+        OvenTemp = 0;
     }
-    public OvenTempException(int value) : base ($"The oven cannot be set to {value}") {
-        OvenTemp = value;
+    public OvenTempException(int Value) : base ($"The oven cannot be set to {Value}") {
+        OvenTemp = Value;
     }
 }
