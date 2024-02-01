@@ -5,11 +5,11 @@ try {
     var Oven = new MyOven();
     // Set the temp to a valid value
     Oven.SetOvenTemp(300);
-    Console.WriteLine($"The oven has been set to {GetOvenTemp()}");
+    Console.WriteLine($"The oven has been set to {Oven.GetOvenTemp()}");
 
     // Now use an invalid value
     Oven.SetOvenTemp(600);
-    Console.WriteLine($"The oven has been set to {GetOvenTemp()}");
+    Console.WriteLine($"The oven has been set to {Oven.GetOvenTemp()}");
 }
 catch (ArgumentOutOfRangeException e) {
     Console.WriteLine($"Exception: {e.Message}");
