@@ -69,7 +69,7 @@ public class CoinCounter
             case "Dollar":
                 return 1.0m;
             default:
-                throw new CoinException("Bad coin type", CoinType);
+                throw new CoinException(CoinType, "Bad coin type");
         }
     }
 
