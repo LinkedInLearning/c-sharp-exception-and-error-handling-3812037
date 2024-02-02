@@ -18,16 +18,21 @@ string[] TestCoins = {
     "Medallion",
     "Nickel",
     "Nickel",
-    "Dollar"    
+    "Dollar"
 };
 
+// The code that your solution will be called with
 CoinCounter Counter = new();
-foreach (string Coin in TestCoins) {
+foreach (string Coin in TestCoins)
+{
     Counter.CountCoin(Coin);
 }
 Console.WriteLine($"Total amount counted is: {Counter.Total:C}");
 Counter.ListBadCoins();
 
+
+// YOUR SOLUTION CODE GOES HERE:
+// =============================
 public class CoinCounter
 {
     private List<string> _badCoins = new();
@@ -49,7 +54,8 @@ public class CoinCounter
 
     private decimal CoinValue(string CoinType)
     {
-        switch (CoinType) {
+        switch (CoinType)
+        {
             case "Penny":
                 return 0.01m;
             case "Nickel":
@@ -67,9 +73,11 @@ public class CoinCounter
         }
     }
 
-    public void ListBadCoins() {
+    public void ListBadCoins()
+    {
         Console.WriteLine($"{_badCoins.Count} bad coins counted");
-        foreach (string s in _badCoins) {
+        foreach (string s in _badCoins)
+        {
             Console.WriteLine($"{s}");
         }
     }
@@ -84,7 +92,16 @@ public class CoinException : Exception
 {
     public string ObjType;
 
-    public CoinException(string Message, string CoinType) : base(Message) {
+    // Define the 3 constructors needed for best practices
+    public CoinException() : base() { ObjType = ""; }
+    public CoinException(string Message) : base(Message) { ObjType = ""; }
+    public CoinException(string Message, Exception inner) : base(Message, inner)
+    {
+        ObjType = "";
+    }
+
+    public CoinException(string CoinType, string Message) : base(Message)
+    {
         ObjType = CoinType;
     }
 }
