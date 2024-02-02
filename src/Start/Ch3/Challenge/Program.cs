@@ -36,6 +36,8 @@ public class CoinCounter
 {
     private decimal _totalAmount = 0;
 
+    // valid coin types are:
+    // Penny, Nickel, Dime, Quarter, HalfDollar, Dollar
     public CoinCounter() { }
 
     public void CountCoin(string CoinType)
